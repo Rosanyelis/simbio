@@ -44,6 +44,15 @@
                         <div data-i18n="Usuarios">Usuarios</div>
                     </a>
                 </li>
+                <li class="menu-item
+                    @if (Route::currentRouteName() == 'categories.index' ||
+                        Route::currentRouteName() == 'categories.create' ||
+                        Route::currentRouteName() == 'categories.edit') active @endif"">
+                    <a href="{{ route('categories.index') }}" class="menu-link">
+                        <i class="menu-icon tf-icons ri-group-2-line"></i>
+                        <div data-i18n="Categorias">Categoria</div>
+                    </a>
+                </li>
                   <li class="menu-item
                     @if (Route::currentRouteName() == 'products.index' ||
                         Route::currentRouteName() == 'products.create' ||
@@ -53,6 +62,7 @@
                         <div data-i18n="Productos">Productos</div>
                     </a>
                 </li>
+
 
             </ul>
         </aside>

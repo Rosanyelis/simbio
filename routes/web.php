@@ -64,6 +64,14 @@ Route::middleware('auth')->group(function () {
     Route::put('/Productos/{products}/update', [ProductController::class, 'update'])->name('products.update');
     Route::get('/Productos/{products}/destroy', [ProductController::class, 'destroy'])->name('products.destroy');
 
+    #Productos
+    Route::get('/Categorias', [CategoryController::class, 'index'])->name('categories.index');
+    Route::get('/Categorias/create', [CategoryController::class, 'create'])->name('categories.create');
+    Route::post('/Categorias/store', [CategoryController::class, 'store'])->name('categories.store');
+    Route::get('/Categorias/{Categories}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
+    Route::put('/Categorias/{Categories}/update', [CategoryController::class, 'update'])->name('categories.update');
+    Route::get('/Categorias/{Categories}/destroy', [CategoryController::class, 'destroy'])->name('categories.destroy');
+
 
 });
 Route::get('comandos', function () {
