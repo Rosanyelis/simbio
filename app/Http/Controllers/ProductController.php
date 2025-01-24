@@ -10,9 +10,19 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if ($request->ajax()) {
+            $data = DB::table('products')
+                    ->join('categories', 'products.categories_id', '=', 'categories.id')
+                    ->select('products.*', 'categories.name as categories');
+            return DataTables::of($data)
+
+
+                ->make(true);
+        }
+
+        return view('products.index');
     }
 
     /**
@@ -20,7 +30,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**

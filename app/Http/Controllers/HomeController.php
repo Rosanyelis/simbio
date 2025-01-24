@@ -20,10 +20,12 @@ class HomeController extends Controller
     public function empresa()
     {
         return view('web.empresa');
+
     }
     public function contactanos()
     {
         return view('web.contactanos');
+
     }
 
     /**
