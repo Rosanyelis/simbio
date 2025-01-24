@@ -44,14 +44,15 @@
                         <div data-i18n="Usuarios">Usuarios</div>
                     </a>
                 </li>
-                <li class="menu-item
+                  <li class="menu-item
                     @if (Route::currentRouteName() == 'products.index' ||
                         Route::currentRouteName() == 'products.create' ||
                         Route::currentRouteName() == 'products.edit') active @endif"">
                     <a href="{{ route('products.index') }}" class="menu-link">
                         <i class="menu-icon tf-icons ri-group-2-line"></i>
-                        <div data-i18n="Usuarios">Productos</div>
+                        <div data-i18n="Productos">Productos</div>
                     </a>
                 </li>
+
             </ul>
         </aside>

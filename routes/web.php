@@ -29,6 +29,7 @@ Route::get('/empresa', [HomeController::class, 'empresa'])->name('empresa');
 Route::get('/contactanos', [HomeController::class, 'contactanos'])->name('contactanos');
 
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -54,6 +55,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/usuarios/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
     Route::put('/usuarios/{user}/update', [UserController::class, 'update'])->name('users.update');
     Route::get('/usuarios/{user}/destroy', [UserController::class, 'destroy'])->name('users.destroy');
+
+    #Productos
+    Route::get('/Productos', [ProductController::class, 'index'])->name('products.index');
+    Route::get('/Productos/create', [ProductController::class, 'create'])->name('products.create');
+    Route::post('/Productos/store', [ProductController::class, 'store'])->name('products.store');
+    Route::get('/Productos/{products}/edit', [ProductController::class, 'edit'])->name('products.edit');
+    Route::put('/Productos/{products}/update', [ProductController::class, 'update'])->name('products.update');
+    Route::get('/Productos/{products}/destroy', [ProductController::class, 'destroy'])->name('products.destroy');
 
 
 });
