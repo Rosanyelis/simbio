@@ -3,7 +3,7 @@
                 <a href="{{ route('dashboard') }}" class="app-brand-link">
                     <span class="app-brand-logo demo">
                         <span style="color: var(--bs-primary)">
-                            <img src="{{ asset('assets/img/logo.png') }}" width="120"  alt="" >
+                            <img src="{{ asset('web/assets/images/logo.png') }}" width="120"  alt="" >
                         </span>
                     </span>
                 </a>
@@ -36,15 +36,6 @@
                     <span class="menu-header-text" data-i18n="Configuraciones">Configuraciones</span>
                 </li>
                 <li class="menu-item
-                    @if (Route::currentRouteName() == 'users.index' ||
-                        Route::currentRouteName() == 'users.create' ||
-                        Route::currentRouteName() == 'users.edit') active @endif"">
-                    <a href="{{ route('users.index') }}" class="menu-link">
-                        <i class="menu-icon tf-icons ri-group-2-line"></i>
-                        <div data-i18n="Usuarios">Usuarios</div>
-                    </a>
-                </li>
-                <li class="menu-item
                     @if (Route::currentRouteName() == 'categories.index' ||
                         Route::currentRouteName() == 'categories.create' ||
                         Route::currentRouteName() == 'categories.edit') active @endif"">
@@ -62,7 +53,14 @@
                         <div data-i18n="Productos">Productos</div>
                     </a>
                 </li>
-
-
+                <li class="menu-item
+                    @if (Route::currentRouteName() == 'users.index' ||
+                        Route::currentRouteName() == 'users.create' ||
+                        Route::currentRouteName() == 'users.edit') active @endif"">
+                    <a href="{{ route('users.index') }}" class="menu-link">
+                        <i class="menu-icon tf-icons ri-group-2-line"></i>
+                        <div data-i18n="Usuarios">Usuarios</div>
+                    </a>
+                </li>
             </ul>
         </aside>

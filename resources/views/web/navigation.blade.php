@@ -6,7 +6,7 @@
 		<div class="row align-items-center">
 			<div class="col-lg-3">
 				<div class="header-logo">
-					<a href="index.html">
+					<a href="{{ route('home') }}">
 						<img src="{{ asset('web/assets/images/logo.png')}}" alt="logo" width="160">
 					</a>
 				</div>
@@ -14,7 +14,7 @@
 			<div class="col-lg-9">
 				<div class="header-menu">
 					<ul>
-						<li><a href="index.html">Inicio</a></li>
+						<li><a href="{{ route('home') }}">Inicio</a></li>
 						<li><a href="{{ route('empresa') }}">Empresa</a></li>
 
 						<li class="menu-item-has-children">
@@ -52,7 +52,7 @@
 	<div class="mobile-menu">
 		<nav class="header-menu">
 			<ul class="nav_scroll">
-				<li><a href="index.html">Inicio</a></li>
+				<li><a href="{{ route('home') }}">Inicio</a></li>
 				<li><a href="javascript:void(0);">Empresa</a></li>
 				<li class="menu-item-has-children"><a href="#">Productos</a>
                    <ul class="sub-menu">

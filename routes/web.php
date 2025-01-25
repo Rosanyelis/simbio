@@ -1,23 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PosController;
-use App\Http\Controllers\RolController;
 use Illuminate\Support\Facades\Artisan;
-use App\Http\Controllers\SaleController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\StoreController;
-use App\Http\Controllers\KardexController;
-use App\Http\Controllers\ExpenseController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\CustomerController;
-use App\Http\Controllers\PurchaseController;
-use App\Http\Controllers\SupplierController;
-use App\Http\Controllers\QuotationController;
-use App\Http\Controllers\WorkOrderController;
 use App\Http\Controllers\HomeController;
 
 //Route::get('/', function () {
@@ -65,12 +53,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/Productos/{products}/destroy', [ProductController::class, 'destroy'])->name('products.destroy');
 
     #Productos
-    Route::get('/Categorias', [CategoryController::class, 'index'])->name('categories.index');
-    Route::get('/Categorias/create', [CategoryController::class, 'create'])->name('categories.create');
-    Route::post('/Categorias/store', [CategoryController::class, 'store'])->name('categories.store');
-    Route::get('/Categorias/{Categories}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
-    Route::put('/Categorias/{Categories}/update', [CategoryController::class, 'update'])->name('categories.update');
-    Route::get('/Categorias/{Categories}/destroy', [CategoryController::class, 'destroy'])->name('categories.destroy');
+    Route::get('/categorias', [CategoryController::class, 'index'])->name('categories.index');
+    Route::get('/categorias/create', [CategoryController::class, 'create'])->name('categories.create');
+    Route::post('/categorias/store', [CategoryController::class, 'store'])->name('categories.store');
+    Route::get('/categorias/{categories}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
+    Route::put('/categorias/{categories}/update', [CategoryController::class, 'update'])->name('categories.update');
+    Route::get('/categorias/{categories}/destroy', [CategoryController::class, 'destroy'])->name('categories.destroy');
 
 
 });

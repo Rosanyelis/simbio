@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('categories_id');
+            $table->foreignId('categories_id')->constrained('categories')->onDelete('cascade');
             $table->string('name');
             $table->string('description');
-            $table->string('link');
+            $table->string('link')->nullable();
             $table->text('composition')->nullable();
             $table->text('mechanism_of_action')->nullable();
             $table->text('presentation')->nullable();
-            $table->text('search box')->nullable();
-            $table->text('value proposition')->nullable();
+            $table->text('table_uses')->nullable();
+            $table->text('value_proposition')->nullable();
             $table->timestamps();
         });
     }

@@ -28,15 +28,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="hero-social-icon" data-animation="fadeInLeft" data-delay="1000ms">
 
-			<ul>
-				<li><a href="https://www.facebook.com/simbioperu"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="https://www.instagram.com/simbio.peru/#"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://www.linkedin.com/company/simbioperu"><i class="fab fa-linkedin-in"></i></a></li>
-				<li class="text">Follow Us</li>
-
-		</div>
 	</div>
 	<div class="hero-area hero-style d-flex align-items-center">
 		<div class="container">
@@ -60,14 +52,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="hero-social-icon" data-animation="fadeInLeft" data-delay="1000ms">
-			<ul>
-	            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-				<li class="text">Follow Us</li>
-			</ul>
-		</div>
+
 	</div>
 	<div class="hero-area2 hero-style d-flex align-items-center">
 		<div class="container">
@@ -91,15 +76,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="hero-social-icon" data-animation="fadeInLeft" data-delay="1000ms">
-			<ul>
-				<li><a href="https://www.facebook.com/simbioperu"><i class="fab fa-facebook-f"></i></a></li>
-				<li><a href="https://www.instagram.com/simbio.peru/#"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://www.linkedin.com/company/simbioperu"><i class="fab fa-linkedin-in"></i></a></li>
-				<li class="text">Follow Us</li>
-			</ul>
-
-		</div>
 	</div>
 </div>
 <!--==================================================-->
@@ -117,7 +93,7 @@
 			<div class="marquee-block">
 				<!-- content-box -->
 				<div class="content-box">
-					<h6 class="title"><span><img src="{{ asset('web/assets//images/home1/text-shape.png')}}" alt="">Sostenibilidad</span></h6>
+					<h6 class="title"><span><img src="{{ asset('web/assets/images/home1/text-shape.png')}}" alt="">Sostenibilidad</span></h6>
 				</div>
 				<!-- content-box -->
 				<div class="content-box">
@@ -179,16 +155,16 @@
 				<div class="single-service-box">
 					<div class="service-content">
 						<div class="service-content-icon">
-							<img src="{{ asset('web/assets//images/Logo-Regeneran.png')}}" alt="">
+							<img src="{{ asset('web/assets/images/Logo-Regeneran.png')}}" alt="">
 						</div>
 						<h4>Regeneran</h4>
 						<p>Los suelos degradados, manteniendo la estructura física, química y biológica del suelo.</p>
 					</div>
 					<div class="service-thumb">
-						<img src="{{ asset('web/assets//images/Regeneran.png')}}" alt="">
+						<img src="{{ asset('web/assets/images/Regeneran.png')}}" alt="">
 					</div>
 					<div class="service-box-shape">
-						<img src="{{ asset('web/assets//images/home1/service-box-shape.png')}}" alt="">
+						<img src="{{ asset('web/assets/images/home1/service-box-shape.png')}}" alt="">
 					</div>
 				</div>
 			</div>

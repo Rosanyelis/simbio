@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Categorias - Crear')
+@section('title', 'Categorias - Editar')
 @section('content')
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="row">
@@ -11,8 +11,9 @@
                         ><i class="ri-arrow-left-line me-1"></i> Regresar</a>
                     </div>
                     <div class="card-body">
-                        <form id="formCategory" class="needs-validation" action="{{ route('categories.store') }}" method="POST">
+                        <form id="formCategory" class="needs-validation" action="{{ route('categories.update', $category->id) }}" method="POST">
                             @csrf
+                            @method('PUT')
                             <div class="row">
                                 <div class="mb-3 col-md-6">
                                     <input
@@ -21,7 +22,7 @@
                                         name="name"
                                         class="form-control @if($errors->has('name')) is-invalid @endif"
                                         placeholder="Categoría"
-                                        value="{{ old('name') }}"
+                                        value="{{ old('name', $category->name) }}"
                                     />
                                     @if($errors->has('name'))
                                     <div class="invalid-feedback">
@@ -34,7 +35,7 @@
                                 <div class="mb-3 col-md-1">
                                     <button type="submit" class="btn btn-primary float-end">
                                         <i class="ri-save-2-line me-1"></i>
-                                        Guardar
+                                        Actualizar
                                     </button>
                                 </div>
                             </div>

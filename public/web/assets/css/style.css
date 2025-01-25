@@ -1,5 +1,5 @@
 /*==============================================
-Template Name: Echofy - Echofy NFT Portfolio HTML5 Template 
+Template Name: Echofy - Echofy NFT Portfolio HTML5 Template
 Author:  https://themeforest.net/user/dreamit-solution
 Description: Description
 Version: 1.0.0
@@ -731,7 +731,7 @@ img.about-thumb-shape {
 }
 
 .section-title.left img {
-    
+
     margin-right: 12px;
 }
 
@@ -1054,7 +1054,7 @@ span.number {
 
 .html {
     width: 80%;
-    background-color: #4CAF50;
+    background-color: #a2ce00;
     display: inline-block;
     animation: html5 2s ease-out;
     height: 8px;
@@ -1066,7 +1066,7 @@ span.number {
 
 .css {
     width: 70%;
-    background-color: #4CAF50;
+    background-color: #a2ce00;
     display: inline-block;
     animation: html5 2s ease-out;
     height: 8px;
@@ -1138,7 +1138,7 @@ span.number {
    <!--Echofy Counter Area Css-->
 ==================================---*/
 .counter-area {
-    background: url(../images/home1/counter-bg.jpg);
+    background: url(../images/counter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0 150px;
@@ -1256,7 +1256,7 @@ span.number {
 .project-content a {
     display: inline-block;
     color: #001819;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     transition: 0.5s;
 }
@@ -1285,7 +1285,7 @@ a.project-button:hover{
 
 .single-project-box:hover a.project-button{
     display: block;
-} 
+}
 
 a.project-button  i {
     display: inline-block;
@@ -1508,6 +1508,7 @@ p.testi-desc {
     font-size: 18px;
     line-height: 30px;
     margin: 22px 0 17px;
+    color: #00000a;
 }
 
 .what-for-comment p {
@@ -1888,7 +1889,7 @@ transform: rotate(360deg);
 
 .footer-social-icon ul li i:hover{
    color:#49AE44;
-} 
+}
 
 .footer-social-icon ul li i:after{
     position: absolute;
@@ -1902,7 +1903,7 @@ transform: rotate(360deg);
     z-index: -1;
     transform: scale(0);
     transition: 0.5s;
-} 
+}
 
 .footer-social-icon ul li i:hover:after{
     transform: scale(1);
@@ -2823,7 +2824,7 @@ transform: rotate(360deg);
 
 .single-donation-box:hover .donation-thumb img{
     opacity: 0.5;
-} 
+}
 
 .donate-button {
     position: absolute;
@@ -2915,7 +2916,7 @@ span.price {
   background-size:cover;
   background-position: center center;
   padding: 100px 0 100px;
-} 
+}
 
 .home-two.testimonial-area .section-title.left {
     margin-bottom: 0;
@@ -3718,7 +3719,7 @@ span.price {
 
 .home-three .skill-bar {
     position: relative;
-  
+
 }
 
 .home-three .skill1 .skill-count1 {
@@ -4593,7 +4594,7 @@ span.price {
 
 .home-four .skill-bar {
     position: relative;
-  
+
 }
 
 .home-four .skill1 .skill-count1 {
@@ -6174,7 +6175,7 @@ span.price {
 =========================================================---*/
 
 .breadcumb-area {
-    background: url(../images/inner-images/breadcumb-bg.jpg);
+    background: url(../images/inner-images/empresa.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -6520,7 +6521,7 @@ p.services-details-desc {
 
 .widget-sidber-download-button a.active {
    background: #a2ce00;
-} 
+}
 
 .widget-sidber-download-button i {
     color: #49AE44;
@@ -7546,7 +7547,7 @@ p.blog-list-desc {
 }
 
 .row.contact-info-bg {
-    background: url(../images/inner-images/contact-info-bg.jpg);
+    background: url(../images/contact-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -8303,7 +8304,7 @@ p.blog-list-desc {
 
 .home-six .skill-bar {
     position: relative;
-  
+
 }
 
 .home-six .skill-bar.two {
@@ -9506,7 +9507,7 @@ p.blog-list-desc {
 
 
 
-/*** 
+/***
 ====================================================================
     Search Popup
 ====================================================================
@@ -9603,8 +9604,8 @@ p.blog-list-desc {
 
 .search-popup .form-group{
     position:relative;
-    margin:0px; 
-  
+    margin:0px;
+
     overflow: hidden;
 }
 .search-popup .form-group input[type="text"],

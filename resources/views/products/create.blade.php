@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0">Nuevo Productos</h5>
+                        <h5 class="mb-0">Nuevo Producto</h5>
 
                         <a href="{{ route('products.index') }}" class="btn btn-sm btn-secondary"
                         ><i class="ri-arrow-left-line me-1"></i> Regresar</a>
@@ -18,7 +18,7 @@
                             @csrf
                             <div class="row">
 
-                                <div class="mb-6 col-md-4">
+                                <div class="mb-6 col-md-8">
                                     <div class="form-floating form-floating-outline">
                                         <input
                                             type="text"
@@ -39,15 +39,17 @@
 
                                 <div class="mb-6 col-md-4">
                                     <div class="form-floating form-floating-outline">
-                                        <select id="rol_id" name="rol_id" class="form-select select2"
+                                        <select id="categories_id" name="categories_id" class="form-select select2"
                                             placeholder="Selecione una categoria">
                                             <option value="">-- Seleccionar --</option>
-
+                                            @foreach($categories as $category)
+                                            <option value="{{ $category->id }}" {{ old('categories_id') == $category->id ? selected : '' }} >{{ $category->name }}</option>
+                                            @endforeach
                                         </select>
-                                        <label for="rol_id">Rol</label>
-                                        @if($errors->has('categoria'))
+                                        <label for="categories_id">Categoria</label>
+                                        @if($errors->has('categories_id'))
                                         <div class="invalid-feedback">
-                                            {{ $errors->first('categoria') }}
+                                            {{ $errors->first('categories_id') }}
                                         </div>
                                         @endif
                                     </div>

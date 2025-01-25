@@ -8,7 +8,7 @@
                 <div class="card p-md-7 p-1">
                     <!-- Logo -->
                     <div class="app-brand justify-content-center mt-5">
-                        <img  src="{{ asset('assets/img/logo.png') }}" width="50%" alt="logo" />
+                        <img  src="{{ asset('web/assets/images/logo.png') }}" width="80%" alt="logo" />
                     </div>
                     <!-- /Logo -->
 
