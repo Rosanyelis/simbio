@@ -27,6 +27,11 @@ class HomeController extends Controller
         return view('web.contactanos');
 
     }
+    public function productos()
+    {
+        return view('web.productos');
+
+    }
 
     /**
      * Store a newly created resource in storage.

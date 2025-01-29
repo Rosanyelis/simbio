@@ -18,7 +18,7 @@
 						<li><a href="{{ route('empresa') }}">Empresa</a></li>
 
 						<li class="menu-item-has-children">
-							<a href="#">Productos<i class="fas fa-chevron-down"></i></a>
+							<a href="{{ route('productos') }}">Productos<i class="fas fa-chevron-down"></i></a>
                            <ul class="sub-menu">
 					      	  <!-- <li><a href="about.html">About</a></li> -->
 						   </ul>
